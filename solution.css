@@ -1,0 +1,14 @@
+/* solution.css */
+.container {
+  background-color: lightblue;
+}
+
+/* Using more specific selectors to fix the specificity conflict */
+.container .item:first-child {
+  background-color: lightgreen; /*This is given higher specificity because of the combination of container and first child selectors*/
+}
+
+/*Alternatively using !important, however this method should be avoided*/
+.container .item:nth-child(2) {
+    background-color: lightcoral !important; /*This style will always be applied.*/
+}
