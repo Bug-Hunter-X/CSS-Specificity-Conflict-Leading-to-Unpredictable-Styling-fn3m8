@@ -1,0 +1,1 @@
+The CSS code has a specificity issue.  The more specific selector is overriding the less specific one, causing unexpected styling.  The conflicting styles are applied to the same element and have equal specificity, leading to unpredictable rendering.  This is frequently missed by developers because the conflict isn't obvious from visual inspection.
